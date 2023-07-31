@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SEB-QB-5yW">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -41,8 +41,8 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="firstBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YOO-4v-c7N"/>
-                                                    <segue destination="Q9C-a0-Mp9" kind="presentation" identifier="firstView" modalPresentationStyle="fullScreen" id="iEs-Y9-kOd"/>
+                                                    <action selector="btnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yt7-ee-pKH"/>
+                                                    <segue destination="Q9C-a0-Mp9" kind="show" identifier="firstView" id="iEs-Y9-kOd"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VXT-tf-ADG">
@@ -57,8 +57,8 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="secondBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q8Y-5i-kmO"/>
-                                                    <segue destination="oLx-f9-fmk" kind="presentation" identifier="secondView" modalPresentationStyle="fullScreen" id="3AI-BA-oCP"/>
+                                                    <action selector="btnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f2C-Vb-hY9"/>
+                                                    <segue destination="oLx-f9-fmk" kind="show" identifier="secondView" id="lBm-nF-Uuk"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -73,25 +73,28 @@
                             <constraint firstItem="EJr-9u-qb4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="s7F-Al-54g"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="6qD-qg-hOw">
+                        <barButtonItem key="backBarButtonItem" title="뒤로가기" id="xcb-Cq-e2K"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="firstBtn" destination="mBg-Fc-9lj" id="Uui-rp-tFM"/>
-                        <outlet property="secondBtn" destination="VXT-tf-ADG" id="nxH-gy-vYE"/>
+                        <outlet property="secondBtn" destination="VXT-tf-ADG" id="kHb-fW-lq3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="125" y="-34"/>
+            <point key="canvasLocation" x="1051.145038167939" y="-34.507042253521128"/>
         </scene>
-        <!--View Controller-->
+        <!--First View Controller-->
         <scene sceneID="JN9-sz-LZY">
             <objects>
-                <viewController id="Q9C-a0-Mp9" sceneMemberID="viewController">
+                <viewController id="Q9C-a0-Mp9" customClass="FirstViewController" customModule="AlcoholismChecker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3DS-Je-Oc4">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Zmg-xg-tOx" userLabel="Total Stack View">
-                                <rect key="frame" x="10" y="60" width="373" height="772"/>
+                                <rect key="frame" x="10" y="113" width="373" height="685"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="알코올 중독 자가진단" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bU6-3n-GZu" userLabel="Title Label">
                                         <rect key="frame" x="0.0" y="0.0" width="373" height="30"/>
@@ -100,18 +103,18 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Mk-u0-ane" userLabel="Question Label">
-                                        <rect key="frame" x="0.0" y="39.999999999999972" width="373" height="470.33333333333326"/>
+                                        <rect key="frame" x="0.0" y="40" width="373" height="378.33333333333331"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9UA-Bu-ryH" userLabel="Btn Stack View">
-                                        <rect key="frame" x="0.0" y="520.33333333333337" width="373" height="240"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="9UA-Bu-ryH" userLabel="Btn Stack View">
+                                        <rect key="frame" x="0.0" y="428.33333333333337" width="373" height="245"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XlD-Q2-2Gc" userLabel="A1">
-                                                <rect key="frame" x="0.0" y="0.0" width="373" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="373" height="45"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="vD1-4V-uct"/>
+                                                    <constraint firstAttribute="height" constant="45" id="vD1-4V-uct"/>
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="A1">
@@ -119,9 +122,9 @@
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqD-Z8-FKD" userLabel="A2">
-                                                <rect key="frame" x="0.0" y="50" width="373" height="40"/>
+                                                <rect key="frame" x="0.0" y="50" width="373" height="45"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="IcF-xV-DW4"/>
+                                                    <constraint firstAttribute="height" constant="45" id="IcF-xV-DW4"/>
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="A2">
@@ -129,9 +132,9 @@
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i8I-WH-Hwu" userLabel="A3">
-                                                <rect key="frame" x="0.0" y="100" width="373" height="40"/>
+                                                <rect key="frame" x="0.0" y="100" width="373" height="45"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="T69-gA-w4i"/>
+                                                    <constraint firstAttribute="height" constant="45" id="T69-gA-w4i"/>
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="A3">
@@ -139,9 +142,9 @@
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H93-3h-PJp" userLabel="A4">
-                                                <rect key="frame" x="0.0" y="150" width="373" height="40"/>
+                                                <rect key="frame" x="0.0" y="150" width="373" height="45"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="qqt-0z-KKv"/>
+                                                    <constraint firstAttribute="height" constant="45" id="qqt-0z-KKv"/>
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="A4">
@@ -149,9 +152,9 @@
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ji3-b7-xoC" userLabel="A5">
-                                                <rect key="frame" x="0.0" y="200" width="373" height="40"/>
+                                                <rect key="frame" x="0.0" y="200" width="373" height="45"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="jIC-dD-VnY"/>
+                                                    <constraint firstAttribute="height" constant="45" id="jIC-dD-VnY"/>
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="A5">
@@ -161,7 +164,7 @@
                                         </subviews>
                                     </stackView>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Ahs-1g-DUg" userLabel="Progress Bar">
-                                        <rect key="frame" x="0.0" y="770.33333333333337" width="373" height="2.6666666666666288"/>
+                                        <rect key="frame" x="0.0" y="683.33333333333337" width="373" height="2.6666666666666288"/>
                                     </progressView>
                                 </subviews>
                             </stackView>
@@ -169,28 +172,37 @@
                         <viewLayoutGuide key="safeArea" id="ZcE-Ou-v8W"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Zmg-xg-tOx" firstAttribute="top" secondItem="ZcE-Ou-v8W" secondAttribute="top" constant="60" id="2Gq-99-lbk"/>
+                            <constraint firstItem="Zmg-xg-tOx" firstAttribute="top" secondItem="ZcE-Ou-v8W" secondAttribute="top" constant="10" id="2Gq-99-lbk"/>
                             <constraint firstItem="ZcE-Ou-v8W" firstAttribute="bottom" secondItem="Zmg-xg-tOx" secondAttribute="bottom" constant="20" id="9hC-FF-eb6"/>
                             <constraint firstItem="Zmg-xg-tOx" firstAttribute="leading" secondItem="ZcE-Ou-v8W" secondAttribute="leading" constant="10" id="BdA-Pj-XTt"/>
                             <constraint firstItem="ZcE-Ou-v8W" firstAttribute="trailing" secondItem="Zmg-xg-tOx" secondAttribute="trailing" constant="10" id="rDf-0t-n0X"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="PNX-yk-Ln9"/>
+                    <connections>
+                        <outlet property="firstAnwser" destination="XlD-Q2-2Gc" id="fop-gr-Ya6"/>
+                        <outlet property="fivethAnswer" destination="ji3-b7-xoC" id="vJi-0R-8ce"/>
+                        <outlet property="fourthAnswer" destination="H93-3h-PJp" id="VqG-kP-6ML"/>
+                        <outlet property="questionLabel" destination="1Mk-u0-ane" id="pmC-UR-Vkw"/>
+                        <outlet property="secondAnswer" destination="fqD-Z8-FKD" id="sKY-Bh-Nef"/>
+                        <outlet property="thirdAnswer" destination="i8I-WH-Hwu" id="FUc-ad-BYa"/>
+                        <outlet property="titleLabel" destination="bU6-3n-GZu" id="5Qg-Mr-9Q1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w6G-Wz-Uf3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1032.824427480916" y="-35.211267605633807"/>
+            <point key="canvasLocation" x="1959.5419847328244" y="-35.211267605633807"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="1w7-ei-cic">
             <objects>
-                <viewController id="oLx-f9-fmk" sceneMemberID="viewController">
+                <viewController id="oLx-f9-fmk" customClass="SecondViewController" customModule="AlcoholismChecker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jbu-53-59X">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xC6-uD-Vq6" userLabel="Total Stack View">
-                                <rect key="frame" x="10" y="60" width="373" height="772"/>
+                                <rect key="frame" x="10" y="113" width="373" height="685"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="알코올 의존증 자가진단" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RsG-tD-aeB" userLabel="Title Label">
                                         <rect key="frame" x="0.0" y="0.0" width="373" height="30"/>
@@ -199,18 +211,18 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOa-cB-n2M" userLabel="Question Label">
-                                        <rect key="frame" x="0.0" y="40" width="373" height="468"/>
+                                        <rect key="frame" x="0.0" y="40" width="373" height="376"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4dt-bR-epW" userLabel="Btn Stack View">
-                                        <rect key="frame" x="0.0" y="518" width="373" height="240"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="4dt-bR-epW" userLabel="Btn Stack View">
+                                        <rect key="frame" x="0.0" y="426" width="373" height="245"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAf-Qc-4rk" userLabel="A1">
-                                                <rect key="frame" x="0.0" y="0.0" width="373" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="373" height="45"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="308-rS-7c6"/>
+                                                    <constraint firstAttribute="height" constant="45" id="308-rS-7c6"/>
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="A1">
@@ -218,9 +230,9 @@
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4AE-AR-ccA">
-                                                <rect key="frame" x="0.0" y="50" width="373" height="40"/>
+                                                <rect key="frame" x="0.0" y="50" width="373" height="45"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="LyM-Rh-lH1"/>
+                                                    <constraint firstAttribute="height" constant="45" id="LyM-Rh-lH1"/>
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="A2">
@@ -228,9 +240,9 @@
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vJE-j4-kq2" userLabel="A3">
-                                                <rect key="frame" x="0.0" y="100" width="373" height="40"/>
+                                                <rect key="frame" x="0.0" y="100" width="373" height="45"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="AYc-nn-HVI"/>
+                                                    <constraint firstAttribute="height" constant="45" id="AYc-nn-HVI"/>
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="A3">
@@ -238,9 +250,9 @@
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRS-wc-J0K" userLabel="A4">
-                                                <rect key="frame" x="0.0" y="150" width="373" height="40"/>
+                                                <rect key="frame" x="0.0" y="150" width="373" height="45"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="Xzc-oB-gGo"/>
+                                                    <constraint firstAttribute="height" constant="45" id="Xzc-oB-gGo"/>
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="A4">
@@ -248,9 +260,9 @@
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLY-fi-Xaj" userLabel="A5">
-                                                <rect key="frame" x="0.0" y="200" width="373" height="40"/>
+                                                <rect key="frame" x="0.0" y="200" width="373" height="45"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="s7U-Sx-IcM"/>
+                                                    <constraint firstAttribute="height" constant="45" id="s7U-Sx-IcM"/>
                                                 </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="A5">
@@ -260,7 +272,7 @@
                                         </subviews>
                                     </stackView>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5fK-p0-1KS">
-                                        <rect key="frame" x="0.0" y="768" width="373" height="4"/>
+                                        <rect key="frame" x="0.0" y="681" width="373" height="4"/>
                                     </progressView>
                                 </subviews>
                             </stackView>
@@ -269,15 +281,43 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="5yv-Bi-4Id" firstAttribute="trailing" secondItem="xC6-uD-Vq6" secondAttribute="trailing" constant="10" id="bZh-M6-JXR"/>
-                            <constraint firstItem="xC6-uD-Vq6" firstAttribute="top" secondItem="5yv-Bi-4Id" secondAttribute="top" constant="60" id="jbE-P7-17i"/>
+                            <constraint firstItem="xC6-uD-Vq6" firstAttribute="top" secondItem="5yv-Bi-4Id" secondAttribute="top" constant="10" id="jbE-P7-17i"/>
                             <constraint firstItem="xC6-uD-Vq6" firstAttribute="leading" secondItem="5yv-Bi-4Id" secondAttribute="leading" constant="10" id="slE-CR-QSX"/>
                             <constraint firstItem="5yv-Bi-4Id" firstAttribute="bottom" secondItem="xC6-uD-Vq6" secondAttribute="bottom" constant="20" id="uFV-5n-jjz"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="aXb-D3-DSL"/>
+                    <connections>
+                        <outlet property="firstAnswer" destination="cAf-Qc-4rk" id="g8i-tD-B2I"/>
+                        <outlet property="fivethAnswer" destination="aLY-fi-Xaj" id="J0w-GP-V2M"/>
+                        <outlet property="fourthAnswer" destination="uRS-wc-J0K" id="GFS-G3-7Hz"/>
+                        <outlet property="questionLabel" destination="YOa-cB-n2M" id="iax-gh-3S8"/>
+                        <outlet property="secondAnswer" destination="4AE-AR-ccA" id="p1g-YD-SDm"/>
+                        <outlet property="thirdAnswer" destination="vJE-j4-kq2" id="rdc-xf-IeN"/>
+                        <outlet property="titleLabel" destination="RsG-tD-aeB" id="G2y-Dv-rAx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M8c-5v-eCI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1033" y="682"/>
+            <point key="canvasLocation" x="1960" y="711"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HPc-nW-RbK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SEB-QB-5yW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dHz-Wa-ZsW">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="GT8-yd-kJx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dMS-9J-vWt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="124.42748091603053" y="-34.507042253521128"/>
         </scene>
     </scenes>
     <resources>
