@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD3EC13D2A7768EA001752B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3EC13C2A7768EA001752B1 /* AppDelegate.swift */; };
+		BD3EC13F2A7768EA001752B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3EC13E2A7768EA001752B1 /* SceneDelegate.swift */; };
+		BD3EC1412A7768EA001752B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3EC1402A7768EA001752B1 /* ViewController.swift */; };
+		BD3EC1442A7768EA001752B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD3EC1422A7768EA001752B1 /* Main.storyboard */; };
+		BD3EC1472A7768EA001752B1 /* AlcoholismChecker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD3EC1452A7768EA001752B1 /* AlcoholismChecker.xcdatamodeld */; };
+		BD3EC1492A7768EC001752B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD3EC1482A7768EC001752B1 /* Assets.xcassets */; };
+		BD3EC14C2A7768EC001752B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD3EC14A2A7768EC001752B1 /* LaunchScreen.storyboard */; };
+		BD3EC1572A779991001752B1 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3EC1562A779991001752B1 /* FirstViewController.swift */; };
+		BD3EC1592A7799A0001752B1 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3EC1582A7799A0001752B1 /* SecondViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BD3EC1392A7768EA001752B1 /* AlcoholismChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlcoholismChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD3EC13C2A7768EA001752B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BD3EC13E2A7768EA001752B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BD3EC1402A7768EA001752B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BD3EC1432A7768EA001752B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BD3EC1462A7768EA001752B1 /* AlcoholismChecker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AlcoholismChecker.xcdatamodel; sourceTree = "<group>"; };
+		BD3EC1482A7768EC001752B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD3EC14B2A7768EC001752B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BD3EC14D2A7768EC001752B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD3EC1562A779991001752B1 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		BD3EC1582A7799A0001752B1 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD3EC1362A7768EA001752B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD3EC1302A7768EA001752B1 = {
+			isa = PBXGroup;
+			children = (
+				BD3EC13B2A7768EA001752B1 /* AlcoholismChecker */,
+				BD3EC13A2A7768EA001752B1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BD3EC13A2A7768EA001752B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD3EC1392A7768EA001752B1 /* AlcoholismChecker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD3EC13B2A7768EA001752B1 /* AlcoholismChecker */ = {
+			isa = PBXGroup;
+			children = (
+				BD3EC13C2A7768EA001752B1 /* AppDelegate.swift */,
+				BD3EC13E2A7768EA001752B1 /* SceneDelegate.swift */,
+				BD3EC1552A778038001752B1 /* Model */,
+				BD3EC1542A778033001752B1 /* View */,
+				BD3EC1532A77802C001752B1 /* Controller */,
+				BD3EC1482A7768EC001752B1 /* Assets.xcassets */,
+				BD3EC14A2A7768EC001752B1 /* LaunchScreen.storyboard */,
+				BD3EC14D2A7768EC001752B1 /* Info.plist */,
+				BD3EC1452A7768EA001752B1 /* AlcoholismChecker.xcdatamodeld */,
+			);
+			path = AlcoholismChecker;
+			sourceTree = "<group>";
+		};
+		BD3EC1532A77802C001752B1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BD3EC1402A7768EA001752B1 /* ViewController.swift */,
+				BD3EC1562A779991001752B1 /* FirstViewController.swift */,
+				BD3EC1582A7799A0001752B1 /* SecondViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BD3EC1542A778033001752B1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BD3EC1422A7768EA001752B1 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BD3EC1552A778038001752B1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD3EC1382A7768EA001752B1 /* AlcoholismChecker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD3EC1502A7768EC001752B1 /* Build configuration list for PBXNativeTarget "AlcoholismChecker" */;
+			buildPhases = (
+				BD3EC1352A7768EA001752B1 /* Sources */,
+				BD3EC1362A7768EA001752B1 /* Frameworks */,
+				BD3EC1372A7768EA001752B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlcoholismChecker;
+			productName = AlcoholismChecker;
+			productReference = BD3EC1392A7768EA001752B1 /* AlcoholismChecker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD3EC1312A7768EA001752B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					BD3EC1382A7768EA001752B1 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = BD3EC1342A7768EA001752B1 /* Build configuration list for PBXProject "AlcoholismChecker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD3EC1302A7768EA001752B1;
+			productRefGroup = BD3EC13A2A7768EA001752B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD3EC1382A7768EA001752B1 /* AlcoholismChecker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD3EC1372A7768EA001752B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD3EC14C2A7768EC001752B1 /* LaunchScreen.storyboard in Resources */,
+				BD3EC1492A7768EC001752B1 /* Assets.xcassets in Resources */,
+				BD3EC1442A7768EA001752B1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD3EC1352A7768EA001752B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD3EC1592A7799A0001752B1 /* SecondViewController.swift in Sources */,
+				BD3EC1572A779991001752B1 /* FirstViewController.swift in Sources */,
+				BD3EC1412A7768EA001752B1 /* ViewController.swift in Sources */,
+				BD3EC13D2A7768EA001752B1 /* AppDelegate.swift in Sources */,
+				BD3EC1472A7768EA001752B1 /* AlcoholismChecker.xcdatamodeld in Sources */,
+				BD3EC13F2A7768EA001752B1 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BD3EC1422A7768EA001752B1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD3EC1432A7768EA001752B1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BD3EC14A2A7768EC001752B1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD3EC14B2A7768EC001752B1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BD3EC14E2A7768EC001752B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BD3EC14F2A7768EC001752B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD3EC1512A7768EC001752B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AlcoholismChecker/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emptyhead.AlcoholismChecker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD3EC1522A7768EC001752B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AlcoholismChecker/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emptyhead.AlcoholismChecker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD3EC1342A7768EA001752B1 /* Build configuration list for PBXProject "AlcoholismChecker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD3EC14E2A7768EC001752B1 /* Debug */,
+				BD3EC14F2A7768EC001752B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD3EC1502A7768EC001752B1 /* Build configuration list for PBXNativeTarget "AlcoholismChecker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD3EC1512A7768EC001752B1 /* Debug */,
+				BD3EC1522A7768EC001752B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BD3EC1452A7768EA001752B1 /* AlcoholismChecker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BD3EC1462A7768EA001752B1 /* AlcoholismChecker.xcdatamodel */,
+			);
+			currentVersion = BD3EC1462A7768EA001752B1 /* AlcoholismChecker.xcdatamodel */;
+			path = AlcoholismChecker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BD3EC1312A7768EA001752B1 /* Project object */;
+}
