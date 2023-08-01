@@ -17,48 +17,83 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="EJr-9u-qb4" userLabel="Total Stack View">
-                                <rect key="frame" x="43.666666666666657" y="363" width="306" height="126.33333333333331"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="EJr-9u-qb4" userLabel="Total Stack View">
+                                <rect key="frame" x="73.000000000000014" y="351" width="247.33333333333337" height="150.33333333333337"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="진단하고 싶은 항목을 선택해주세요." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbv-nr-hlG" userLabel="Select Label">
-                                        <rect key="frame" x="0.0" y="0.0" width="306" height="26.333333333333332"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="알코올 중독 자가 진단 테스트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbv-nr-hlG" userLabel="Title Label">
+                                        <rect key="frame" x="0.0" y="0.0" width="247.33333333333334" height="26.333333333333332"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="nfC-PX-6IY">
+                                        <rect key="frame" x="0.0" y="46.333333333333314" width="247.33333333333334" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="성별" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9GS-aG-837" userLabel="Sex Label">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="34"/>
+                                                <color key="backgroundColor" red="0.28739446400000002" green="0.63287109139999997" blue="0.55293542149999997" alpha="0.50422405722914942" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="7q5-D1-u5w"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="jAz-gq-6Cp" userLabel="Radio Btn Stack View">
+                                                <rect key="frame" x="54.999999999999993" y="0.0" width="68.333333333333314" height="34"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSl-hx-wIv" userLabel="Male Btn">
+                                                        <rect key="frame" x="0.0" y="0.0" width="32.666666666666664" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="남" image="circle" catalog="system">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jci-rA-10z" userLabel="Female Btn">
+                                                        <rect key="frame" x="35.666666666666657" y="0.0" width="32.666666666666657" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="여" image="circle" catalog="system">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나이" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBF-yw-1Yf" userLabel="Age Label">
+                                                <rect key="frame" x="128.33333333333334" y="0.0" width="50" height="34"/>
+                                                <color key="backgroundColor" red="0.28739446400000002" green="0.63287109139999997" blue="0.55293542149999997" alpha="0.50422405719999996" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="yOX-us-iqn"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H7o-aU-4e0" userLabel="Age TextField">
+                                                <rect key="frame" x="183.33333333333331" y="0.0" width="64" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rwI-Jf-a5D" userLabel="Btn Stack View">
-                                        <rect key="frame" x="0.0" y="76.333333333333314" width="306" height="50"/>
+                                        <rect key="frame" x="0.0" y="100.33333333333331" width="247.33333333333334" height="50"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBg-Fc-9lj">
-                                                <rect key="frame" x="0.0" y="0.0" width="148" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="247.33333333333334" height="50"/>
                                                 <color key="backgroundColor" red="0.28739446400000002" green="0.63287109139999997" blue="0.55293542149999997" alpha="0.64619324538881417" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="4re-fi-UNy"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="알코올 중독증">
+                                                <state key="normal" title="바로 시작하기">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="btnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yt7-ee-pKH"/>
                                                     <segue destination="Q9C-a0-Mp9" kind="show" identifier="firstView" id="iEs-Y9-kOd"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VXT-tf-ADG">
-                                                <rect key="frame" x="158" y="0.0" width="148" height="50"/>
-                                                <color key="backgroundColor" red="0.28739446400000002" green="0.63287109139999997" blue="0.55293542149999997" alpha="0.6461932454" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="Anw-UP-AZd"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="알코올 의존증">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="btnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f2C-Vb-hY9"/>
-                                                    <segue destination="oLx-f9-fmk" kind="show" identifier="secondView" id="lBm-nF-Uuk"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -77,8 +112,12 @@
                         <barButtonItem key="backBarButtonItem" title="뒤로가기" id="xcb-Cq-e2K"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="ageLabel" destination="PBF-yw-1Yf" id="Lya-wj-q6n"/>
+                        <outlet property="ageTextField" destination="H7o-aU-4e0" id="h2y-qQ-qIl"/>
                         <outlet property="firstBtn" destination="mBg-Fc-9lj" id="Uui-rp-tFM"/>
-                        <outlet property="secondBtn" destination="VXT-tf-ADG" id="kHb-fW-lq3"/>
+                        <outlet property="sexLabel" destination="9GS-aG-837" id="0qX-RK-1Kz"/>
+                        <outletCollection property="radioButtons" destination="VSl-hx-wIv" collectionClass="NSMutableArray" id="fWf-lt-t7b"/>
+                        <outletCollection property="radioButtons" destination="jci-rA-10z" collectionClass="NSMutableArray" id="5Hk-px-1J5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -102,10 +141,10 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Mk-u0-ane" userLabel="Question Label">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Question" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Mk-u0-ane" userLabel="Question Label">
                                         <rect key="frame" x="0.0" y="40" width="373" height="378.33333333333331"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <color key="textColor" red="0.28739446400000002" green="0.63287109139999997" blue="0.55293542149999997" alpha="0.79708165049882029" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="9UA-Bu-ryH" userLabel="Btn Stack View">
@@ -120,6 +159,9 @@
                                                 <state key="normal" title="A1">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="choiceMade:" destination="Q9C-a0-Mp9" eventType="touchUpInside" id="7Br-Cq-E75"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqD-Z8-FKD" userLabel="A2">
                                                 <rect key="frame" x="0.0" y="50" width="373" height="45"/>
@@ -130,6 +172,9 @@
                                                 <state key="normal" title="A2">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="choiceMade:" destination="Q9C-a0-Mp9" eventType="touchUpInside" id="eRy-0B-tqg"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i8I-WH-Hwu" userLabel="A3">
                                                 <rect key="frame" x="0.0" y="100" width="373" height="45"/>
@@ -140,6 +185,9 @@
                                                 <state key="normal" title="A3">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="choiceMade:" destination="Q9C-a0-Mp9" eventType="touchUpInside" id="dza-lW-05t"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H93-3h-PJp" userLabel="A4">
                                                 <rect key="frame" x="0.0" y="150" width="373" height="45"/>
@@ -150,6 +198,9 @@
                                                 <state key="normal" title="A4">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="choiceMade:" destination="Q9C-a0-Mp9" eventType="touchUpInside" id="D1L-iJ-hf0"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ji3-b7-xoC" userLabel="A5">
                                                 <rect key="frame" x="0.0" y="200" width="373" height="45"/>
@@ -160,6 +211,9 @@
                                                 <state key="normal" title="A5">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="choiceMade:" destination="Q9C-a0-Mp9" eventType="touchUpInside" id="b6S-r7-EWh"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -193,114 +247,6 @@
             </objects>
             <point key="canvasLocation" x="1959.5419847328244" y="-35.211267605633807"/>
         </scene>
-        <!--Second View Controller-->
-        <scene sceneID="1w7-ei-cic">
-            <objects>
-                <viewController id="oLx-f9-fmk" customClass="SecondViewController" customModule="AlcoholismChecker" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Jbu-53-59X">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xC6-uD-Vq6" userLabel="Total Stack View">
-                                <rect key="frame" x="10" y="113" width="373" height="685"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="알코올 의존증 자가진단" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RsG-tD-aeB" userLabel="Title Label">
-                                        <rect key="frame" x="0.0" y="0.0" width="373" height="30"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOa-cB-n2M" userLabel="Question Label">
-                                        <rect key="frame" x="0.0" y="40" width="373" height="376"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="4dt-bR-epW" userLabel="Btn Stack View">
-                                        <rect key="frame" x="0.0" y="426" width="373" height="245"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAf-Qc-4rk" userLabel="A1">
-                                                <rect key="frame" x="0.0" y="0.0" width="373" height="45"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="45" id="308-rS-7c6"/>
-                                                </constraints>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="A1">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4AE-AR-ccA">
-                                                <rect key="frame" x="0.0" y="50" width="373" height="45"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="45" id="LyM-Rh-lH1"/>
-                                                </constraints>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="A2">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vJE-j4-kq2" userLabel="A3">
-                                                <rect key="frame" x="0.0" y="100" width="373" height="45"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="45" id="AYc-nn-HVI"/>
-                                                </constraints>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="A3">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRS-wc-J0K" userLabel="A4">
-                                                <rect key="frame" x="0.0" y="150" width="373" height="45"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="45" id="Xzc-oB-gGo"/>
-                                                </constraints>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="A4">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLY-fi-Xaj" userLabel="A5">
-                                                <rect key="frame" x="0.0" y="200" width="373" height="45"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="45" id="s7U-Sx-IcM"/>
-                                                </constraints>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="A5">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5fK-p0-1KS">
-                                        <rect key="frame" x="0.0" y="681" width="373" height="4"/>
-                                    </progressView>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="5yv-Bi-4Id"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="5yv-Bi-4Id" firstAttribute="trailing" secondItem="xC6-uD-Vq6" secondAttribute="trailing" constant="10" id="bZh-M6-JXR"/>
-                            <constraint firstItem="xC6-uD-Vq6" firstAttribute="top" secondItem="5yv-Bi-4Id" secondAttribute="top" constant="10" id="jbE-P7-17i"/>
-                            <constraint firstItem="xC6-uD-Vq6" firstAttribute="leading" secondItem="5yv-Bi-4Id" secondAttribute="leading" constant="10" id="slE-CR-QSX"/>
-                            <constraint firstItem="5yv-Bi-4Id" firstAttribute="bottom" secondItem="xC6-uD-Vq6" secondAttribute="bottom" constant="20" id="uFV-5n-jjz"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="aXb-D3-DSL"/>
-                    <connections>
-                        <outlet property="firstAnswer" destination="cAf-Qc-4rk" id="g8i-tD-B2I"/>
-                        <outlet property="fivethAnswer" destination="aLY-fi-Xaj" id="J0w-GP-V2M"/>
-                        <outlet property="fourthAnswer" destination="uRS-wc-J0K" id="GFS-G3-7Hz"/>
-                        <outlet property="questionLabel" destination="YOa-cB-n2M" id="iax-gh-3S8"/>
-                        <outlet property="secondAnswer" destination="4AE-AR-ccA" id="p1g-YD-SDm"/>
-                        <outlet property="thirdAnswer" destination="vJE-j4-kq2" id="rdc-xf-IeN"/>
-                        <outlet property="titleLabel" destination="RsG-tD-aeB" id="G2y-Dv-rAx"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="M8c-5v-eCI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1960" y="711"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="HPc-nW-RbK">
             <objects>
@@ -321,6 +267,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="circle" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -15,7 +15,8 @@
 		BD3EC1492A7768EC001752B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD3EC1482A7768EC001752B1 /* Assets.xcassets */; };
 		BD3EC14C2A7768EC001752B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD3EC14A2A7768EC001752B1 /* LaunchScreen.storyboard */; };
 		BD3EC1572A779991001752B1 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3EC1562A779991001752B1 /* FirstViewController.swift */; };
-		BD3EC1592A7799A0001752B1 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3EC1582A7799A0001752B1 /* SecondViewController.swift */; };
+		BD3EC15B2A780130001752B1 /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3EC15A2A780130001752B1 /* Survey.swift */; };
+		BD3EC15D2A780497001752B1 /* SurveyBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3EC15C2A780497001752B1 /* SurveyBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +30,8 @@
 		BD3EC14B2A7768EC001752B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD3EC14D2A7768EC001752B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD3EC1562A779991001752B1 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		BD3EC1582A7799A0001752B1 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		BD3EC15A2A780130001752B1 /* Survey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
+		BD3EC15C2A780497001752B1 /* SurveyBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +82,6 @@
 			children = (
 				BD3EC1402A7768EA001752B1 /* ViewController.swift */,
 				BD3EC1562A779991001752B1 /* FirstViewController.swift */,
-				BD3EC1582A7799A0001752B1 /* SecondViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -96,6 +97,8 @@
 		BD3EC1552A778038001752B1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BD3EC15A2A780130001752B1 /* Survey.swift */,
+				BD3EC15C2A780497001752B1 /* SurveyBrain.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -171,8 +174,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD3EC1592A7799A0001752B1 /* SecondViewController.swift in Sources */,
 				BD3EC1572A779991001752B1 /* FirstViewController.swift in Sources */,
+				BD3EC15B2A780130001752B1 /* Survey.swift in Sources */,
+				BD3EC15D2A780497001752B1 /* SurveyBrain.swift in Sources */,
 				BD3EC1412A7768EA001752B1 /* ViewController.swift in Sources */,
 				BD3EC13D2A7768EA001752B1 /* AppDelegate.swift in Sources */,
 				BD3EC1472A7768EA001752B1 /* AlcoholismChecker.xcdatamodeld in Sources */,

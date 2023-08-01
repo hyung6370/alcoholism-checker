@@ -10,6 +10,7 @@ import UIKit
 class FirstViewController: UIViewController {
 
     @IBOutlet weak var titleLabel: UILabel!
+    
     @IBOutlet weak var questionLabel: UILabel!
     
     @IBOutlet weak var firstAnwser: UIButton!
@@ -18,11 +19,26 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var fourthAnswer: UIButton!
     @IBOutlet weak var fivethAnswer: UIButton!
     
+    var surveyBrain = SurveyBrain()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         configureUI()
+        updateUI()
     }
+    
+
+    @IBAction func choiceMade(_ sender: UIButton) {
+        
+        let selectedAnswer = sender.currentTitle ?? "No Title"
+        print("Selected Answer: \(selectedAnswer)")
+        
+        surveyBrain.nextSurvey(userAnswer: sender.currentTitle!)
+        
+        updateUI()
+    }
+    
     
     func configureUI() {
         firstAnwser.layer.borderWidth = 2
@@ -49,6 +65,16 @@ class FirstViewController: UIViewController {
         fivethAnswer.layer.borderColor = UIColor(hexCode: "#2DDFAC").cgColor
         fivethAnswer.layer.cornerRadius = 10
         fivethAnswer.clipsToBounds = true
+    }
+    
+    func updateUI() {
+        questionLabel.text = surveyBrain.getSurveyQuestion()
+        
+        firstAnwser.setTitle(surveyBrain.getAnswer1(), for: .normal)
+        secondAnswer.setTitle(surveyBrain.getAnswer2(), for: .normal)
+        thirdAnswer.setTitle(surveyBrain.getAnswer3(), for: .normal)
+        fourthAnswer.setTitle(surveyBrain.getAnswer4(), for: .normal)
+        fivethAnswer.setTitle(surveyBrain.getAnswer5(), for: .normal)
     }
 }
 
