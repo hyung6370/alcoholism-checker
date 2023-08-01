@@ -15,8 +15,10 @@
 		BD3EC1492A7768EC001752B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD3EC1482A7768EC001752B1 /* Assets.xcassets */; };
 		BD3EC14C2A7768EC001752B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD3EC14A2A7768EC001752B1 /* LaunchScreen.storyboard */; };
 		BD3EC1572A779991001752B1 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3EC1562A779991001752B1 /* FirstViewController.swift */; };
-		BD3EC15B2A780130001752B1 /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3EC15A2A780130001752B1 /* Survey.swift */; };
-		BD3EC15D2A780497001752B1 /* SurveyBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3EC15C2A780497001752B1 /* SurveyBrain.swift */; };
+		BDE98E612A792E03004F83E3 /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE98E602A792E03004F83E3 /* Survey.swift */; };
+		BDE98E632A792E7B004F83E3 /* SurveyBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE98E622A792E7B004F83E3 /* SurveyBrain.swift */; };
+		BDE98E652A794F4B004F83E3 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE98E642A794F4B004F83E3 /* ResultViewController.swift */; };
+		BDE98E672A795197004F83E3 /* SurveyResultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE98E662A795197004F83E3 /* SurveyResultManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +32,10 @@
 		BD3EC14B2A7768EC001752B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD3EC14D2A7768EC001752B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD3EC1562A779991001752B1 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		BD3EC15A2A780130001752B1 /* Survey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
-		BD3EC15C2A780497001752B1 /* SurveyBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyBrain.swift; sourceTree = "<group>"; };
+		BDE98E602A792E03004F83E3 /* Survey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
+		BDE98E622A792E7B004F83E3 /* SurveyBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyBrain.swift; sourceTree = "<group>"; };
+		BDE98E642A794F4B004F83E3 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		BDE98E662A795197004F83E3 /* SurveyResultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyResultManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,7 @@
 			children = (
 				BD3EC1402A7768EA001752B1 /* ViewController.swift */,
 				BD3EC1562A779991001752B1 /* FirstViewController.swift */,
+				BDE98E642A794F4B004F83E3 /* ResultViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -97,8 +102,9 @@
 		BD3EC1552A778038001752B1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				BD3EC15A2A780130001752B1 /* Survey.swift */,
-				BD3EC15C2A780497001752B1 /* SurveyBrain.swift */,
+				BDE98E602A792E03004F83E3 /* Survey.swift */,
+				BDE98E622A792E7B004F83E3 /* SurveyBrain.swift */,
+				BDE98E662A795197004F83E3 /* SurveyResultManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -175,11 +181,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD3EC1572A779991001752B1 /* FirstViewController.swift in Sources */,
-				BD3EC15B2A780130001752B1 /* Survey.swift in Sources */,
-				BD3EC15D2A780497001752B1 /* SurveyBrain.swift in Sources */,
 				BD3EC1412A7768EA001752B1 /* ViewController.swift in Sources */,
+				BDE98E672A795197004F83E3 /* SurveyResultManager.swift in Sources */,
 				BD3EC13D2A7768EA001752B1 /* AppDelegate.swift in Sources */,
+				BDE98E652A794F4B004F83E3 /* ResultViewController.swift in Sources */,
+				BDE98E612A792E03004F83E3 /* Survey.swift in Sources */,
 				BD3EC1472A7768EA001752B1 /* AlcoholismChecker.xcdatamodeld in Sources */,
+				BDE98E632A792E7B004F83E3 /* SurveyBrain.swift in Sources */,
 				BD3EC13F2A7768EA001752B1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

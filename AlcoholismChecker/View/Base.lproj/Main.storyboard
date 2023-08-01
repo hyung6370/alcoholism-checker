@@ -141,7 +141,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Question" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Mk-u0-ane" userLabel="Question Label">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Mk-u0-ane" userLabel="Question Label">
                                         <rect key="frame" x="0.0" y="40" width="373" height="378.33333333333331"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                         <color key="textColor" red="0.28739446400000002" green="0.63287109139999997" blue="0.55293542149999997" alpha="0.79708165049882029" colorSpace="custom" customColorSpace="displayP3"/>
@@ -219,6 +219,7 @@
                                     </stackView>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Ahs-1g-DUg" userLabel="Progress Bar">
                                         <rect key="frame" x="0.0" y="683.33333333333337" width="373" height="2.6666666666666288"/>
+                                        <color key="tintColor" red="0.28739446400000002" green="0.63287109139999997" blue="0.55293542149999997" alpha="0.95548627235571182" colorSpace="custom" customColorSpace="displayP3"/>
                                     </progressView>
                                 </subviews>
                             </stackView>
@@ -237,6 +238,7 @@
                         <outlet property="firstAnwser" destination="XlD-Q2-2Gc" id="fop-gr-Ya6"/>
                         <outlet property="fivethAnswer" destination="ji3-b7-xoC" id="vJi-0R-8ce"/>
                         <outlet property="fourthAnswer" destination="H93-3h-PJp" id="VqG-kP-6ML"/>
+                        <outlet property="progressBar" destination="Ahs-1g-DUg" id="d9E-b9-X6N"/>
                         <outlet property="questionLabel" destination="1Mk-u0-ane" id="pmC-UR-Vkw"/>
                         <outlet property="secondAnswer" destination="fqD-Z8-FKD" id="sKY-Bh-Nef"/>
                         <outlet property="thirdAnswer" destination="i8I-WH-Hwu" id="FUc-ad-BYa"/>
@@ -246,6 +248,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w6G-Wz-Uf3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1959.5419847328244" y="-35.211267605633807"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="CDJ-P2-7MP">
+            <objects>
+                <viewController id="qdf-Eh-qbe" customClass="ResultViewController" customModule="AlcoholismChecker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yzc-xP-QnC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="WuS-5e-lmj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XQz-8v-VZW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2842" y="-35"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HPc-nW-RbK">

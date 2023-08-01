@@ -32,7 +32,31 @@ class ViewController: UIViewController {
 
 
     @IBAction func btnTapped(_ sender: UIButton) {
+        
+        guard let selectedSexButton = radioButtons.first(where: { $0.isSelected }),
+              let sex = selectedSexButton.titleLabel?.text else {
+            showAlert(message: "성별을 선택해주세요.")
+            return
+        }
+        
+        guard let ageText = ageTextField.text, !ageText.isEmpty else {
+            showAlert(message: "나이를 입력해주세요.")
+            return
+        }
+        
+        guard let age = Int(ageText) else {
+            showAlert(message: "올바른 나이를 입력해주세요.")
+            return
+        }
+        
         startReady(topic: "알코올 중독", view: "firstView")
+    }
+    
+    func showAlert(message: String) {
+        let alertController = UIAlertController(title: "경고", message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "확인", style: .default, handler: nil)
+        alertController.addAction(okAction)
+        present(alertController, animated: true, completion: nil)
     }
     
         
@@ -69,9 +93,11 @@ class ViewController: UIViewController {
         
         self.radioButtons.forEach {
             if $0.tag == sender.tag {
+                $0.isSelected = true
                 $0.setImage(UIImage(systemName: "circle.fill"), for: .normal)
             }
             else {
+                $0.isSelected = false
                 $0.setImage(UIImage(systemName: "circle"), for: .normal)
             }
         }

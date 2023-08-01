@@ -19,11 +19,12 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var fourthAnswer: UIButton!
     @IBOutlet weak var fivethAnswer: UIButton!
     
+    @IBOutlet weak var progressBar: UIProgressView!
+    
     var surveyBrain = SurveyBrain()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         configureUI()
         updateUI()
     }
@@ -31,10 +32,13 @@ class FirstViewController: UIViewController {
 
     @IBAction func choiceMade(_ sender: UIButton) {
         
-        let selectedAnswer = sender.currentTitle ?? "No Title"
-        print("Selected Answer: \(selectedAnswer)")
+        let userChoice = sender.currentTitle!
+        print(userChoice)
         
-        surveyBrain.nextSurvey(userAnswer: sender.currentTitle!)
+        surveyBrain.checkChoice(userChoice)
+        print("Score: \(surveyBrain.getScore())")
+        
+        surveyBrain.nextSurvey()
         
         updateUI()
     }
@@ -68,13 +72,14 @@ class FirstViewController: UIViewController {
     }
     
     func updateUI() {
-        questionLabel.text = surveyBrain.getSurveyQuestion()
-        
-        firstAnwser.setTitle(surveyBrain.getAnswer1(), for: .normal)
-        secondAnswer.setTitle(surveyBrain.getAnswer2(), for: .normal)
-        thirdAnswer.setTitle(surveyBrain.getAnswer3(), for: .normal)
-        fourthAnswer.setTitle(surveyBrain.getAnswer4(), for: .normal)
-        fivethAnswer.setTitle(surveyBrain.getAnswer5(), for: .normal)
+        questionLabel.text = surveyBrain.getSurveyTitle()
+        progressBar.progress = surveyBrain.getProgress()
+            
+        firstAnwser.setTitle(surveyBrain.getChoice1(), for: .normal)
+        secondAnswer.setTitle(surveyBrain.getChoice2(), for: .normal)
+        thirdAnswer.setTitle(surveyBrain.getChoice3(), for: .normal)
+        fourthAnswer.setTitle(surveyBrain.getChoice4(), for: .normal)
+        fivethAnswer.setTitle(surveyBrain.getChoice5(), for: .normal)
     }
 }
 
