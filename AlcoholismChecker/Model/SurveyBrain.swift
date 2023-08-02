@@ -144,6 +144,7 @@ struct SurveyBrain {
     
     var surveyNumber = 0
     var score = 0
+    var isSurveyComplete = false
     
     func getSurveyTitle() -> String {
         return surveies[surveyNumber].title
@@ -193,17 +194,21 @@ struct SurveyBrain {
     }
     
     mutating func nextSurvey() {
-        
+        print(surveies.count)
         if surveyNumber + 1 < surveies.count {
             surveyNumber += 1
-            
+            print(surveyNumber)
         }
         else {
-            surveyNumber = 0
+            isSurveyComplete = true
+            print("끝")
         }
     }
     
     func getScore() -> Int {
         return score
     }
+    
+    
+    
 }

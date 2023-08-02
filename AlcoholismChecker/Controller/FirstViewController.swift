@@ -38,11 +38,32 @@ class FirstViewController: UIViewController {
         surveyBrain.checkChoice(userChoice)
         print("Score: \(surveyBrain.getScore())")
         
-        surveyBrain.nextSurvey()
-        
-        updateUI()
+//        if surveyBrain.isSurveyComplete {
+//            showCompletionMessage()
+//        } else {
+            surveyBrain.nextSurvey()
+            updateUI()
+//        }
+
     }
     
+    func showCompletionMessage() {
+        let alertController = UIAlertController(title: "완료", message: "설문조사가 완료되었습니다.", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "확인", style: .default) { [weak self] _ in
+            self?.dismiss(animated: true, completion: nil)
+            self?.navigateToResult()
+        }
+        alertController.addAction(okAction)
+        present(alertController, animated: true, completion: nil)
+    }
+    
+    func navigateToResult() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let resultViewController = storyboard.instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController {
+            resultViewController.score = surveyBrain.getScore()
+            present(resultViewController, animated: true, completion: nil)
+        }
+    }
     
     func configureUI() {
         firstAnwser.layer.borderWidth = 2
@@ -80,6 +101,10 @@ class FirstViewController: UIViewController {
         thirdAnswer.setTitle(surveyBrain.getChoice3(), for: .normal)
         fourthAnswer.setTitle(surveyBrain.getChoice4(), for: .normal)
         fivethAnswer.setTitle(surveyBrain.getChoice5(), for: .normal)
+        
+        if surveyBrain.isSurveyComplete {
+            showCompletionMessage()
+        }
     }
 }
 

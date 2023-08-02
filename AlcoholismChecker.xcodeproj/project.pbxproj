@@ -18,7 +18,6 @@
 		BDE98E612A792E03004F83E3 /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE98E602A792E03004F83E3 /* Survey.swift */; };
 		BDE98E632A792E7B004F83E3 /* SurveyBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE98E622A792E7B004F83E3 /* SurveyBrain.swift */; };
 		BDE98E652A794F4B004F83E3 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE98E642A794F4B004F83E3 /* ResultViewController.swift */; };
-		BDE98E672A795197004F83E3 /* SurveyResultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE98E662A795197004F83E3 /* SurveyResultManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +34,6 @@
 		BDE98E602A792E03004F83E3 /* Survey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
 		BDE98E622A792E7B004F83E3 /* SurveyBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyBrain.swift; sourceTree = "<group>"; };
 		BDE98E642A794F4B004F83E3 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
-		BDE98E662A795197004F83E3 /* SurveyResultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyResultManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +102,6 @@
 			children = (
 				BDE98E602A792E03004F83E3 /* Survey.swift */,
 				BDE98E622A792E7B004F83E3 /* SurveyBrain.swift */,
-				BDE98E662A795197004F83E3 /* SurveyResultManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -182,7 +179,6 @@
 			files = (
 				BD3EC1572A779991001752B1 /* FirstViewController.swift in Sources */,
 				BD3EC1412A7768EA001752B1 /* ViewController.swift in Sources */,
-				BDE98E672A795197004F83E3 /* SurveyResultManager.swift in Sources */,
 				BD3EC13D2A7768EA001752B1 /* AppDelegate.swift in Sources */,
 				BDE98E652A794F4B004F83E3 /* ResultViewController.swift in Sources */,
 				BDE98E612A792E03004F83E3 /* Survey.swift in Sources */,
