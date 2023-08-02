@@ -118,9 +118,11 @@
                         <outlet property="sexLabel" destination="9GS-aG-837" id="0qX-RK-1Kz"/>
                         <outletCollection property="radioButtons" destination="VSl-hx-wIv" collectionClass="NSMutableArray" id="fWf-lt-t7b"/>
                         <outletCollection property="radioButtons" destination="jci-rA-10z" collectionClass="NSMutableArray" id="5Hk-px-1J5"/>
+                        <segue destination="aWi-Ma-vcq" kind="unwind" identifier="unwindToHome" unwindAction="unwindToHome:" id="FW9-h8-Mh0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="aWi-Ma-vcq" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1051.145038167939" y="-34.507042253521128"/>
         </scene>
@@ -262,7 +264,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="알코올 중독 진단 결과" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xo1-nD-Uxa" userLabel="Title Label">
                                         <rect key="frame" x="0.0" y="0.0" width="333" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -325,33 +327,75 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="mAH-tw-Jcc" userLabel="Color Stack View">
                                                 <rect key="frame" x="0.0" y="42" width="333" height="40"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="적정음주군" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IKt-Xa-Cpl" userLabel="Green Display Label">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="YhW-hS-13c">
                                                         <rect key="frame" x="0.0" y="0.0" width="107.66666666666667" height="40"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="40" id="ySQ-Nf-PeE"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="위험음주군" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqn-hF-111" userLabel="Orange Display Label">
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o35-pk-VsL">
+                                                                <rect key="frame" x="0.0" y="0.0" width="20" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="20" id="Rwc-U1-AaH"/>
+                                                                </constraints>
+                                                                <color key="tintColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Button" image="circle.fill" catalog="system"/>
+                                                            </button>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="적정음주군" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IKt-Xa-Cpl" userLabel="Green Display Label">
+                                                                <rect key="frame" x="24.000000000000007" y="0.0" width="83.666666666666686" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="ySQ-Nf-PeE"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="bYP-4W-eMI">
                                                         <rect key="frame" x="112.66666666666666" y="0.0" width="107.66666666666666" height="40"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="40" id="O6N-Zl-KCX"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="고위험군" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vis-vs-X5v" userLabel="Red Display Label">
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HGb-x6-hZE">
+                                                                <rect key="frame" x="0.0" y="0.0" width="20" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="20" id="hfj-bA-Pli"/>
+                                                                </constraints>
+                                                                <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Button" image="circle.fill" catalog="system"/>
+                                                            </button>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="위험음주군" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqn-hF-111" userLabel="Orange Display Label">
+                                                                <rect key="frame" x="25.000000000000007" y="0.0" width="82.666666666666686" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="O6N-Zl-KCX"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Sfx-tp-e22">
                                                         <rect key="frame" x="225.33333333333334" y="0.0" width="107.66666666666666" height="40"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="40" id="ic9-Qc-Dxk"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPo-X9-unC">
+                                                                <rect key="frame" x="0.0" y="0.0" width="20" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="20" id="FlI-oM-l6L"/>
+                                                                </constraints>
+                                                                <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="0.86376144712334435" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Button" image="circle.fill" catalog="system"/>
+                                                            </button>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="고위험군" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vis-vs-X5v" userLabel="Red Display Label">
+                                                                <rect key="frame" x="24.999999999999979" y="0.0" width="82.666666666666686" height="40"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="ic9-Qc-Dxk"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
@@ -371,6 +415,7 @@
                                 </state>
                                 <connections>
                                     <action selector="restartBtnTapped:" destination="qdf-Eh-qbe" eventType="touchUpInside" id="3pM-Gb-WTT"/>
+                                    <segue destination="MZL-hT-HLq" kind="unwind" identifier="unwindToHome" unwindAction="unwindToHome:" id="H57-T3-NWO"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -389,16 +434,20 @@
                     <navigationItem key="navigationItem" id="Uvk-PD-bpY"/>
                     <connections>
                         <outlet property="descriptionLabel" destination="iuo-Td-uO0" id="gbF-tQ-roo"/>
+                        <outlet property="firstLabel" destination="OB8-Gu-N2f" id="8Fm-d0-yQh"/>
                         <outlet property="greenLabel" destination="IKt-Xa-Cpl" id="cu2-09-kGS"/>
                         <outlet property="orangeLabel" destination="oqn-hF-111" id="Qc6-ZE-Oix"/>
                         <outlet property="redLabel" destination="Vis-vs-X5v" id="Ink-vk-Slv"/>
                         <outlet property="restartButton" destination="NRU-Pw-L5n" id="XOK-zQ-A1m"/>
                         <outlet property="resultLabel" destination="HtJ-IU-WCx" id="tkE-rC-zMg"/>
+                        <outlet property="secondLabel" destination="RN9-3l-L8Z" id="11l-jL-9kI"/>
+                        <outlet property="thirdLabel" destination="Ud4-yV-rpR" id="gU1-Nm-qm4"/>
                         <outlet property="titleLabel" destination="Xo1-nD-Uxa" id="NtV-4o-X5x"/>
                         <outlet property="totalScoreLabel" destination="NAB-S1-40Q" id="Jv0-TU-6dP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XQz-8v-VZW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="MZL-hT-HLq" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2859" y="-35"/>
         </scene>
@@ -423,6 +472,7 @@
     </scenes>
     <resources>
         <image name="circle" catalog="system" width="128" height="123"/>
+        <image name="circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -15,6 +15,9 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var totalScoreLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     
+    @IBOutlet weak var firstLabel: UILabel!
+    @IBOutlet weak var secondLabel: UILabel!
+    @IBOutlet weak var thirdLabel: UILabel!
     
     @IBOutlet weak var greenLabel: UILabel!
     @IBOutlet weak var orangeLabel: UILabel!
@@ -37,6 +40,11 @@ class ResultViewController: UIViewController {
         
         restartButton.layer.cornerRadius = 15
         resultLabel.clipsToBounds = true
+    
+        firstLabel.addBottomBorder(with: UIColor.lightGray, andWidth: CGFloat(1.0))
+        secondLabel.addBottomBorder(with: UIColor.lightGray, andWidth: CGFloat(1.0))
+        thirdLabel.addBottomBorder(with: UIColor.lightGray, andWidth: CGFloat(1.0))
+        
     }
     
     func decideRange(totalScore: Int) {
@@ -82,8 +90,17 @@ class ResultViewController: UIViewController {
     }
 
     @IBAction func restartBtnTapped(_ sender: UIButton) {
-        
+        self.performSegue(withIdentifier: "unwindToHome", sender: self)
     }
-    
 
+}
+
+extension UILabel {
+    func addBottomBorder(with color: UIColor?, andWidth borderWidth: CGFloat) {
+        let border = UIView()
+        border.backgroundColor = color
+        border.autoresizingMask = [.flexibleWidth, .flexibleTopMargin]
+        border.frame = CGRect(x: 0, y: self.frame.height - borderWidth, width: self.frame.width, height: borderWidth)
+        self.addSubview(border)
+    }
 }
