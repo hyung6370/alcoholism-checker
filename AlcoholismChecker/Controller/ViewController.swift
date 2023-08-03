@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var firstBtn: UIButton!
     @IBOutlet weak var secondBtn: UIButton!
@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     
     @IBOutlet var radioButtons: [UIButton]!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,9 +28,21 @@ class ViewController: UIViewController {
         self.radioButtons.forEach {
             $0.addTarget(self, action: #selector(self.radioButton(_ :)), for: .touchUpInside)
         }
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tapGesture)
+        
+        ageTextField.delegate = self
     }
 
-
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 
     @IBAction func btnTapped(_ sender: UIButton) {
         
@@ -49,8 +62,9 @@ class ViewController: UIViewController {
             return
         }
         
-        startReady(topic: "알코올 중독", view: "firstView")
+        startReady(topic: "알코올 중독", view: "firstView", gender: sex, age: age)
     }
+
     
     func showAlert(message: String) {
         let alertController = UIAlertController(title: "경고", message: message, preferredStyle: .alert)
@@ -71,21 +85,31 @@ class ViewController: UIViewController {
         ageLabel.clipsToBounds = true
     }
     
-    func startReady(topic: String, view: String) {
+    func startReady(topic: String, view: String, gender: String, age: Int) {
         let alertController = UIAlertController(title: "자가진단", message: "\(topic) 진단을 시작 하시겠습니까?", preferredStyle: .alert)
-        
-        let confirmAction = UIAlertAction(title: "시작", style: .default) { [weak self] (action) in
-            DispatchQueue.main.async {
-                self?.performSegue(withIdentifier: view, sender: self)
+            
+            let confirmAction = UIAlertAction(title: "시작", style: .default) { [weak self] (action) in
+                DispatchQueue.main.async {
+                    self?.performSegue(withIdentifier: view, sender: (gender, age))
+                }
+            }
+            
+            let cancelAction = UIAlertAction(title: "취소", style: .cancel, handler: nil)
+            
+            alertController.addAction(confirmAction)
+            alertController.addAction(cancelAction)
+            
+            present(alertController, animated: true, completion: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "firstView", let destinationVC = segue.destination as? FirstViewController {
+            if let gender = (sender as? (String, Int))?.0,
+               let age = (sender as? (String, Int))?.1 {
+                destinationVC.gender = gender
+                destinationVC.age = age
             }
         }
-        
-        let cancelAction = UIAlertAction(title: "취소", style: .cancel, handler: nil)
-        
-        alertController.addAction(confirmAction)
-        alertController.addAction(cancelAction)
-        
-        present(alertController, animated: true, completion: nil)
     }
     
     @objc private func radioButton(_ sender: UIButton) {

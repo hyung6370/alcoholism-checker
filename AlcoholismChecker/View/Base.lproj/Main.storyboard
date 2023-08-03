@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="EJr-9u-qb4" userLabel="Total Stack View">
-                                <rect key="frame" x="73.000000000000014" y="351" width="247.33333333333337" height="150.33333333333337"/>
+                                <rect key="frame" x="73.000000000000014" y="351" width="247.33333333333337" height="150"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="알코올 중독 자가 진단 테스트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbv-nr-hlG" userLabel="Title Label">
                                         <rect key="frame" x="0.0" y="0.0" width="247.33333333333334" height="26.333333333333332"/>
@@ -27,10 +27,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="nfC-PX-6IY">
-                                        <rect key="frame" x="0.0" y="46.333333333333314" width="247.33333333333334" height="34"/>
+                                        <rect key="frame" x="0.0" y="46.333333333333314" width="247.33333333333334" height="33.666666666666657"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="성별" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9GS-aG-837" userLabel="Sex Label">
-                                                <rect key="frame" x="0.0" y="0.0" width="50" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="33.666666666666664"/>
                                                 <color key="backgroundColor" red="0.28739446400000002" green="0.63287109139999997" blue="0.55293542149999997" alpha="0.50422405722914942" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="7q5-D1-u5w"/>
@@ -40,10 +40,10 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="jAz-gq-6Cp" userLabel="Radio Btn Stack View">
-                                                <rect key="frame" x="54.999999999999993" y="0.0" width="68.333333333333314" height="34"/>
+                                                <rect key="frame" x="54.999999999999993" y="0.0" width="68.333333333333314" height="33.666666666666664"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSl-hx-wIv" userLabel="Male Btn">
-                                                        <rect key="frame" x="0.0" y="0.0" width="32.666666666666664" height="34"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="32.666666666666664" height="33.666666666666664"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="남" image="circle" catalog="system">
@@ -51,7 +51,7 @@
                                                         </state>
                                                     </button>
                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jci-rA-10z" userLabel="Female Btn">
-                                                        <rect key="frame" x="35.666666666666657" y="0.0" width="32.666666666666657" height="34"/>
+                                                        <rect key="frame" x="35.666666666666657" y="0.0" width="32.666666666666657" height="33.666666666666664"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="여" image="circle" catalog="system">
@@ -61,7 +61,7 @@
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나이" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBF-yw-1Yf" userLabel="Age Label">
-                                                <rect key="frame" x="128.33333333333334" y="0.0" width="50" height="34"/>
+                                                <rect key="frame" x="128.33333333333334" y="0.0" width="50" height="33.666666666666664"/>
                                                 <color key="backgroundColor" red="0.28739446400000002" green="0.63287109139999997" blue="0.55293542149999997" alpha="0.50422405719999996" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="yOX-us-iqn"/>
@@ -71,14 +71,14 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H7o-aU-4e0" userLabel="Age TextField">
-                                                <rect key="frame" x="183.33333333333331" y="0.0" width="64" height="34"/>
+                                                <rect key="frame" x="183.33333333333331" y="0.0" width="64" height="33.666666666666664"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rwI-Jf-a5D" userLabel="Btn Stack View">
-                                        <rect key="frame" x="0.0" y="100.33333333333331" width="247.33333333333334" height="50"/>
+                                        <rect key="frame" x="0.0" y="100" width="247.33333333333334" height="50"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBg-Fc-9lj">
                                                 <rect key="frame" x="0.0" y="0.0" width="247.33333333333334" height="50"/>
@@ -100,11 +100,21 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alcoholTherapy" translatesAutoresizingMaskIntoConstraints="NO" id="xaW-wi-RIK">
+                                <rect key="frame" x="74" y="221" width="245" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="a1V-z5-7ET"/>
+                                    <constraint firstAttribute="width" constant="245" id="ggG-hf-fEd"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="EJr-9u-qb4" firstAttribute="top" secondItem="xaW-wi-RIK" secondAttribute="bottom" id="5Uf-hz-R5C"/>
+                            <constraint firstItem="xaW-wi-RIK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="118" id="90e-fX-hfX"/>
                             <constraint firstItem="EJr-9u-qb4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qhk-eS-NET"/>
+                            <constraint firstItem="xaW-wi-RIK" firstAttribute="centerX" secondItem="EJr-9u-qb4" secondAttribute="centerX" id="eSr-LG-I9q"/>
                             <constraint firstItem="EJr-9u-qb4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="s7F-Al-54g"/>
                         </constraints>
                     </view>
@@ -143,8 +153,25 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pIK-28-GNq">
+                                        <rect key="frame" x="0.0" y="40" width="373" height="20.333333333333329"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dri-4r-zAu" userLabel="Gender Label">
+                                                <rect key="frame" x="0.0" y="0.0" width="181.66666666666666" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <color key="textColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="0.91852311900000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6wn-Fk-kA6" userLabel="Age Label">
+                                                <rect key="frame" x="191.66666666666663" y="0.0" width="181.33333333333337" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <color key="textColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="0.91852311900000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Mk-u0-ane" userLabel="Question Label">
-                                        <rect key="frame" x="0.0" y="40" width="373" height="378.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="70.333333333333343" width="373" height="348"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                         <color key="textColor" red="0.28739446400000002" green="0.63287109139999997" blue="0.55293542149999997" alpha="0.79708165049882029" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
@@ -237,9 +264,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="PNX-yk-Ln9"/>
                     <connections>
+                        <outlet property="ageLabel" destination="6wn-Fk-kA6" id="WtY-co-CSA"/>
                         <outlet property="firstAnwser" destination="XlD-Q2-2Gc" id="fop-gr-Ya6"/>
                         <outlet property="fivethAnswer" destination="ji3-b7-xoC" id="vJi-0R-8ce"/>
                         <outlet property="fourthAnswer" destination="H93-3h-PJp" id="VqG-kP-6ML"/>
+                        <outlet property="genderLabel" destination="dri-4r-zAu" id="zHU-k9-mMj"/>
                         <outlet property="progressBar" destination="Ahs-1g-DUg" id="d9E-b9-X6N"/>
                         <outlet property="questionLabel" destination="1Mk-u0-ane" id="pmC-UR-Vkw"/>
                         <outlet property="secondAnswer" destination="fqD-Z8-FKD" id="sKY-Bh-Nef"/>
@@ -418,6 +447,12 @@
                                     <segue destination="MZL-hT-HLq" kind="unwind" identifier="unwindToHome" unwindAction="unwindToHome:" id="H57-T3-NWO"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alcoholTherapy" translatesAutoresizingMaskIntoConstraints="NO" id="aRz-lH-10N">
+                                <rect key="frame" x="76" y="484" width="241" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="HmX-Hj-Yti"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WuS-5e-lmj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -425,9 +460,12 @@
                             <constraint firstItem="NRU-Pw-L5n" firstAttribute="centerX" secondItem="Yzc-xP-QnC" secondAttribute="centerX" id="5YV-2B-N4K"/>
                             <constraint firstItem="gjh-ji-85g" firstAttribute="leading" secondItem="WuS-5e-lmj" secondAttribute="leading" constant="30" id="NK6-Hy-w9q"/>
                             <constraint firstItem="WuS-5e-lmj" firstAttribute="trailing" secondItem="NRU-Pw-L5n" secondAttribute="trailing" constant="20" id="Vbb-Xp-tqA"/>
+                            <constraint firstItem="aRz-lH-10N" firstAttribute="top" secondItem="gjh-ji-85g" secondAttribute="bottom" id="Wmt-cm-ouf"/>
                             <constraint firstItem="WuS-5e-lmj" firstAttribute="bottom" secondItem="NRU-Pw-L5n" secondAttribute="bottom" constant="30" id="b4c-uC-cL0"/>
                             <constraint firstItem="WuS-5e-lmj" firstAttribute="trailing" secondItem="gjh-ji-85g" secondAttribute="trailing" constant="30" id="emw-6C-f9m"/>
                             <constraint firstItem="gjh-ji-85g" firstAttribute="top" secondItem="WuS-5e-lmj" secondAttribute="top" constant="30" id="fGn-db-uyh"/>
+                            <constraint firstItem="aRz-lH-10N" firstAttribute="leading" secondItem="WuS-5e-lmj" secondAttribute="leading" constant="76" id="gTX-8h-Xgc"/>
+                            <constraint firstItem="aRz-lH-10N" firstAttribute="centerX" secondItem="NRU-Pw-L5n" secondAttribute="centerX" id="ljk-vX-nKT"/>
                             <constraint firstItem="NRU-Pw-L5n" firstAttribute="leading" secondItem="WuS-5e-lmj" secondAttribute="leading" constant="20" id="t4h-fL-TPp"/>
                         </constraints>
                     </view>
@@ -471,6 +509,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="alcoholTherapy" width="544" height="547"/>
         <image name="circle" catalog="system" width="128" height="123"/>
         <image name="circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">

@@ -11,6 +11,11 @@ class FirstViewController: UIViewController {
 
     @IBOutlet weak var titleLabel: UILabel!
     
+
+    @IBOutlet weak var genderLabel: UILabel!
+    @IBOutlet weak var ageLabel: UILabel!
+    
+    
     @IBOutlet weak var questionLabel: UILabel!
     
     @IBOutlet weak var firstAnwser: UIButton!
@@ -23,12 +28,22 @@ class FirstViewController: UIViewController {
     
     var surveyBrain = SurveyBrain()
     
+    var gender: String?
+    var age: Int?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
         updateUI()
+        profile()
     }
     
+    func profile() {
+        if let gender = gender, let age = age {
+            genderLabel.text = "성별: \(gender)"
+            ageLabel.text = "나이: \(age)세"
+        }
+    }
 
     @IBAction func choiceMade(_ sender: UIButton) {
         
@@ -37,13 +52,9 @@ class FirstViewController: UIViewController {
         
         surveyBrain.checkChoice(userChoice)
         print("Score: \(surveyBrain.getScore())")
-        
-//        if surveyBrain.isSurveyComplete {
-//            showCompletionMessage()
-//        } else {
-            surveyBrain.nextSurvey()
-            updateUI()
-//        }
+
+        surveyBrain.nextSurvey()
+        updateUI()
 
     }
     
@@ -61,6 +72,7 @@ class FirstViewController: UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         if let resultViewController = storyboard.instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController {
             resultViewController.score = surveyBrain.getScore()
+            resultViewController.gender = gender
             present(resultViewController, animated: true, completion: nil)
         }
     }
