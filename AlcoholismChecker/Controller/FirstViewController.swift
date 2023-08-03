@@ -44,6 +44,23 @@ class FirstViewController: UIViewController {
             genderLabel.text = "성별: \(gender)"
             ageLabel.text = "나이: \(age)세"
         }
+        
+        if gender == "남" {
+            let color = UIColor(displayP3Red: 22/255,
+                                green: 210/255,
+                                blue: 195/255,
+                                alpha: 1)
+            genderLabel.textColor = color
+            ageLabel.textColor = color
+        }
+        else {
+            let color = UIColor(displayP3Red: 218/255,
+                                green: 127/255,
+                                blue: 163/255,
+                                alpha: 1)
+            genderLabel.textColor = color
+            ageLabel.textColor = color
+        }
     }
 
     @IBAction func choiceMade(_ sender: UIButton) {

@@ -19,7 +19,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var radioButtons: [UIButton]!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
