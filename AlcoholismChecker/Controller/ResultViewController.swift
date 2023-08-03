@@ -27,15 +27,12 @@ class ResultViewController: UIViewController {
     var score: Int = 0
     var gender: String?
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         totalScoreLabel.text = "\(score)점"
         configureUI()
         decideRange(totalScore: score)
-        
-
     }
     
     func configureUI() {
@@ -48,7 +45,6 @@ class ResultViewController: UIViewController {
         firstLabel.addBottomBorder(with: UIColor.lightGray, andWidth: CGFloat(1.0))
         secondLabel.addBottomBorder(with: UIColor.lightGray, andWidth: CGFloat(1.0))
         thirdLabel.addBottomBorder(with: UIColor.lightGray, andWidth: CGFloat(1.0))
-        
     }
     
     func decideRange(totalScore: Int) {
