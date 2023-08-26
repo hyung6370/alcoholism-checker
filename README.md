@@ -1,6 +1,12 @@
 # alcoholism-checker
 <img width="544" alt="alcoholTherapy" src="https://github.com/hyung6370/my-memo-app/assets/81064963/45dda311-e715-4ca2-b75a-255152f99a9c">
 
+<br />
+
+[✏️ 블로그 정리 글 보러가기](https://www.notion.so/hyung6370/For-Alcoholics-eff166b1b7fc43b9bfcda01eb1026a8c?pvs=4)
+
+<br />
+
 ### 🥃 절제하지 못하는 음주는 병입니다. 🙅🏻‍♂️❌
 알코올 중독 자가진단 테스트 입니다🩵
 <br /><br /><hr />
