@@ -1,7 +1,7 @@
 # alcoholism-checker
 <img width="544" alt="alcoholTherapy" src="https://github.com/hyung6370/my-memo-app/assets/81064963/45dda311-e715-4ca2-b75a-255152f99a9c">
 
-<br />
+<br /><br />
 
 [✏️ 블로그 정리 글 보러가기](https://www.notion.so/hyung6370/For-Alcoholics-eff166b1b7fc43b9bfcda01eb1026a8c?pvs=4)
 
