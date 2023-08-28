@@ -3,7 +3,7 @@
 
 <br /><br />
 
-[✏️ 블로그 정리 글 보러가기](https://www.notion.so/hyung6370/For-Alcoholics-eff166b1b7fc43b9bfcda01eb1026a8c?pvs=4)
+[✏️ 블로그 정리 글 보러가기](https://emptyhead.oopy.io/eff166b1-b7fc-43b9-bfcd-a01eb1026a8c)
 
 <br />
 
