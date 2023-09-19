@@ -10,7 +10,6 @@ import UIKit
 class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var firstBtn: UIButton!
-    @IBOutlet weak var secondBtn: UIButton!
 
     @IBOutlet weak var sexLabel: UILabel!
     @IBOutlet weak var ageLabel: UILabel!
@@ -127,6 +126,5 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func unwindToHome(_ segue: UIStoryboardSegue) {}
-    
 }
 

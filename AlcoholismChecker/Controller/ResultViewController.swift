@@ -142,13 +142,11 @@ class ResultViewController: UIViewController {
             secondLabel.text = "6 ~ 9"
             thirdLabel.text = "10 이상"
         }
-
     }
 
     @IBAction func restartBtnTapped(_ sender: UIButton) {
         self.performSegue(withIdentifier: "unwindToHome", sender: self)
     }
-
 }
 
 extension UILabel {

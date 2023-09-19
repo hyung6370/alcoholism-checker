@@ -208,7 +208,4 @@ struct SurveyBrain {
     func getScore() -> Int {
         return score
     }
-    
-    
-    
 }

@@ -11,7 +11,6 @@ import UIKit
 class FirstViewController: UIViewController {
 
     @IBOutlet weak var titleLabel: UILabel!
-    
 
     @IBOutlet weak var genderLabel: UILabel!
     @IBOutlet weak var ageLabel: UILabel!
